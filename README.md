@@ -38,3 +38,11 @@ C:\Users\admin>docker container rm rabbitNode2
 rabbitNode2
 
 
+3. To join the two nodes in the same cluster, ensure that the specific ports are accessible. 
+
+4369 EPDM: It is a service for peer discovery used by nodes and RabbitMQ CLI tools. Peer discovery locates nodes or peers for data communication in a peer-to-peer network.
+5672: It is a port used by AMQP protocol.
+25672: It is used for communication between nodes and CLI tools.
+35672-35682: It is used by CLI tools for communication with nodes.
+15672: It is used by the management UI for instances.
+
